@@ -75,3 +75,4 @@ greet({ name: "Alice", age: 25 }); // Object literal
 
     Adhere to these lexical rules to write valid JavaScript code.
     Understanding lexical structure is essential for interpreting and writing JavaScript effectively.
+[Next](Expressions.md)
