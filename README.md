@@ -1,10 +1,10 @@
-### JavaScript for NodeJs Developer Should Know
-# Understanding JavaScript's Lexical Structure
-## Introduction
+# JavaScript for NodeJs Developer Should Know
+## 1. Lexical Structure
+### Introduction
 
 **Lexical structure** defines the basic rules for writing JavaScript code, forming the foundation for its syntax. It's essential to understand these rules to write valid and effective JavaScript programs.
 
-## Key Concepts
+### Key Concepts
 
 1. **Case Sensitivity:**
 
@@ -28,7 +28,7 @@ Multi-line comments start with `/*` and end with `*/`:
 4. **Literals:**
 
     - *Literals* represent fixed values directly in the code.
-    - **Types** of literals:
+    - **Types of literals:**
         - Numbers: `123, 4.56, -789`
         - Strings: `"Hello, world!"`, `'Single quotes also work'`
         - Booleans: `true`, `false`
@@ -72,10 +72,83 @@ function greet(person) {  // Identifier for function name
 greet({ name: "Alice", age: 25 }); // Object literal
 
 ```
-## Key Points:
-    - Adhere to these lexical rules to write valid JavaScript code.
-    - Understanding lexical structure is essential for interpreting and writing JavaScript effectively.
+### Key points
+- Adhere to these lexical rules to write valid JavaScript code.
+- Understanding lexical structure is essential for interpreting and writing JavaScript effectively.
 
-[Next](Expressions.md)
+## 2. Expressions
+### Introduction
+- Expressions are the fundamental building blocks of JavaScript code that produce values.
+- They are comprised of values, variables, operators, and function calls.
+- The JavaScript engine evaluates expressions and returns a resulting value.
+
+### Types of Expressions:
+
+1. **Literal Expressions:**
+    Represent fixed values directly in the code.
+**Examples:**
+- Number literals: 10, 3.14, -5
+- String literals: "Hello, world!", 'Single quotes also work'
+- Boolean literals: true, false
+- Null literal: null
+- Undefined literal: undefined
+
+2. **Identifier Expressions:**
+    Refer to variables or function names that hold values.
+**Examples:** `userAge`, `fullName`
+
+3. **Operator Expressions:**
+    Combine values using operators to produce new values.
+**Examples:**
+- Arithmetic operators: `+`, `-`, `*`, `/`, `%`
+- Comparison operators: `==`, `!=`, `<`, `>`,` <=`, `>=`
+- Logical operators: `&& `(and), `|| `(or),` ! `(not)
+
+4. **Function Call Expressions:**
+    Invoke a function and return its result.
+**Examples:** `Math.sqrt(16)`, `calculateArea(4, 5)`
+
+5. **Object Expressions:**
+    Create objects using curly braces `{}`.
+**Example:** `let person = { name: "John", age: 30 }`
+
+6. **Array Expressions:**
+    Create arrays using square brackets `[]`.
+**Example:** `let numbers = [1, 2, 3, 4, 5]`
+
+7. **Assignment Expressions:**
+    Assign a value to a variable using the `=` operator.
+**Example:** `let x = 10`
+
+###Code Examples:
+```
+// Literal expressions
+let age = 30;
+let message = "Greetings!";
+
+// Identifier expressions
+let userName = "Alice";
+
+// Operator expressions
+let result = 5 + 3; // result will be 8
+let isEven = number % 2 === 0;
+
+// Function call expressions
+let area = calculateArea(10, 5);
+
+// Object and array expressions
+let person = { name: "Bob", age: 25 };
+let colors = ["red", "green", "blue"];
+
+// Assignment expressions
+let x = 10 + 5; // x will be assigned the value 15
+```
+
+### Key Points:
+
+- Expressions are evaluated to produce values, while statements perform actions.
+- Expressions can be nested within other expressions, forming complex calculations and logic.
+- Understanding expressions is essential for writing meaningful and effective JavaScript code.
+
 1. [Lexical Structure](Lexicalstructure.md)
 2. [Expressions](Expressions.md)
