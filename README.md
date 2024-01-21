@@ -18,13 +18,13 @@
 3. **Comments:**
 
     *Single-line* comments start with `//` and extend to the end of the line:
-```
-//this is a single line comment
-```
-Multi-line comments start with `/*` and end with `*/`:
-```
-/*This is a multiline comment*/
-```
+    ```
+    //this is a single line comment
+    ```
+    *Multi-line* comments start with `/*` and end with `*/`:
+    ```
+    /*This is a multiline comment*/
+    ```
 4. **Literals:**
 
     - *Literals* represent fixed values directly in the code.
@@ -86,39 +86,39 @@ greet({ name: "Alice", age: 25 }); // Object literal
 
 1. **Literal Expressions:**
     Represent fixed values directly in the code.
-- **Examples**
-    - Number literals: 10, 3.14, -5
-    - String literals: "Hello, world!", 'Single quotes also work'
-    - Boolean literals: true, false
-    - Null literal: null
-    - Undefined literal: undefined
+    - **Examples**
+        - Number literals: `10, 3.14, -5`
+        - String literals: `"Hello, world!"`, `'Single quotes also work'`
+        - Boolean literals: `true`, `false`
+        - Null literal: `null`
+        - Undefined literal: `undefined`
 
 2. **Identifier Expressions:**
     Refer to variables or function names that hold values.
-**Examples:** `userAge`, `fullName`
+    - **Examples:** `userAge`, `fullName`
 
 3. **Operator Expressions:**
     Combine values using operators to produce new values.
-- **Examples:**
-    - Arithmetic operators: `+`, `-`, `*`, `/`, `%`
-    - Comparison operators: `==`, `!=`, `<`, `>`,` <=`, `>=`
-    - Logical operators: `&& `(and), `|| `(or),` ! `(not)
+    - **Examples:**
+        - Arithmetic operators: `+`, `-`, `*`, `/`, `%`
+        - Comparison operators: `==`, `!=`, `<`, `>`,` <=`, `>=`
+        - Logical operators: `&& `(and), `|| `(or),` ! `(not)
 
 4. **Function Call Expressions:**
     Invoke a function and return its result.
-- **Examples:** `Math.sqrt(16)`, `calculateArea(4, 5)`
+    - **Examples:** `Math.sqrt(16)`, `calculateArea(4, 5)`
 
 5. **Object Expressions:**
     Create objects using curly braces `{}`.
-- **Example:** `let person = { name: "John", age: 30 }`
+    - **Example:** `let person = { name: "John", age: 30 }`
 
 6. **Array Expressions:**
     Create arrays using square brackets `[]`.
-- **Example:** `let numbers = [1, 2, 3, 4, 5]`
+    - **Example:** `let numbers = [1, 2, 3, 4, 5]`
 
 7. **Assignment Expressions:**
     Assign a value to a variable using the `=` operator.
-- **Example:** `let x = 10`
+    - **Example:** `let x = 10`
 
 ### Code Examples:
 ```
