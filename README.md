@@ -157,9 +157,11 @@ let x = 10 + 5; // x will be assigned the value 15
 **Data types** define the kind of information a variable can hold and the operations that can be performed on it.JavaScript has two main categories of data type , primitive data type and non-primitive data type(reference type).
  
 1. **Primitive Data Types**
+
     Simple , indivisible values stored directly in memory.
 
-    1. **Number:**
+1. **Number:**
+
     Represents numeric values including `integer` and `floating point`.
     - Integer (`10, -5, 0`)
     - Floating-point (`3.14, 2.5e-3`)
@@ -167,33 +169,38 @@ let x = 10 + 5; // x will be assigned the value 15
     ```let age = 30;
      let pi = 3.14159;
     ```
-    2. **String:**
+2. **String:**
+
     Represents a sequence of characters enclosed in single or double quotes.
     - Examples:
     ```
     let name = "Alice";
     let greeting = 'Hell0, Alice!';
     ```
-    3. **Boolean:**
+3. **Boolean:**
+
     Represents logical values : `true` or `false`.
     - Examples:
     ```
     let isLoggedIn = true;
     let isLoading = false;
     ```
-    4. **Null:**
+4. **Null:**
+
     Represents the intentional absence of a value.
     - Example:
     ```
     let middleName = null;
     ```
-    5. **Undefined:**
+5. **Undefined:**
+
     Indicates a declared variable has not been assigned a value.
     - Example:
     ```
     let uninitializedVariable ; // Undefined by Default
     ```
-    6. **Symbol:**
+6. **Symbol:**
+
     Introduced in ECMAScript 6 (ES6), symbols are unique and immutable primitive.
     You use the `Symbol()` function to create a Symbol.
     - Example:
@@ -203,9 +210,11 @@ let x = 10 + 5; // x will be assigned the value 15
     ```
 
 2. **Non-Primitive Data Types(Reference Types,Object Types)**
+
     Store references to memory locations where the actual values are stored.
 
-    1. **Objects:**
+1. **Objects:**
+
     Represents a collection of key-value pairs (properties).It is a fundamental data structure in JavaScript.
     - Example:
     ```
@@ -215,13 +224,15 @@ let x = 10 + 5; // x will be assigned the value 15
         isStudent: false
     }
     ```
-    2. **Arrays:**
+2. **Arrays:**
+
     Represents an ordered list of values and uses zero-based indexing.
     - Example:
     ```
     let number = [ 1, 2, 3, 4, 5];
     ```
-    3. **Functions:**
+3. **Functions:**
+
     Represents  a reusable block of code that perform specific tasks.
     - Example:
     ```
