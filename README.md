@@ -18,11 +18,11 @@
 3. **Comments:**
 
     *Single-line* comments start with `//` and extend to the end of the line:
-    ```
+    ```javascript
     //this is a single line comment
     ```
     *Multi-line* comments start with `/*` and end with `*/`:
-    ```
+    ```javascript
     /*This is a multiline comment*/
     ```
 4. **Literals:**
@@ -55,7 +55,7 @@
 
 ### CodeExample
 
-```
+```javascript
 let age = 30;   // Number literal
 let name = "John"; // String literal
 let isStudent = true; // Boolean literal
@@ -121,7 +121,7 @@ greet({ name: "Alice", age: 25 }); // Object literal
     - **Example:** `let x = 10`
 
 ### Code Examples:
-```
+```javascript
 // Literal expressions
 let age = 30;
 let message = "Greetings!";
@@ -166,14 +166,15 @@ let x = 10 + 5; // x will be assigned the value 15
     - Integer (`10, -5, 0`)
     - Floating-point (`3.14, 2.5e-3`)
     - Examples:
-    ```let age = 30;
-     let pi = 3.14159;
+    ```javascript
+    let age = 30;
+    let pi = 3.14159;
     ```
 2. **String:**
 
     Represents a sequence of characters enclosed in single or double quotes.
     - Examples:
-    ```
+    ```javascript
     let name = "Alice";
     let greeting = 'Hell0, Alice!';
     ```
@@ -181,7 +182,7 @@ let x = 10 + 5; // x will be assigned the value 15
 
     Represents logical values : `true` or `false`.
     - Examples:
-    ```
+    ```javascript
     let isLoggedIn = true;
     let isLoading = false;
     ```
@@ -189,14 +190,14 @@ let x = 10 + 5; // x will be assigned the value 15
 
     Represents the intentional absence of a value.
     - Example:
-    ```
+    ```javascript
     let middleName = null;
     ```
 5. **Undefined:**
 
     Indicates a declared variable has not been assigned a value.
     - Example:
-    ```
+    ```javascript
     let uninitializedVariable ; // Undefined by Default
     ```
 6. **Symbol:**
@@ -204,7 +205,7 @@ let x = 10 + 5; // x will be assigned the value 15
     Introduced in ECMAScript 6 (ES6), symbols are unique and immutable primitive.
     You use the `Symbol()` function to create a Symbol.
     - Example:
-    ```
+    ```javascript
     let sym = Symbol('Hello, symbol');
     console.log(sym); // Symbol(Hello, symbol);
     ```
@@ -217,7 +218,7 @@ let x = 10 + 5; // x will be assigned the value 15
 
     Represents a collection of key-value pairs (properties).It is a fundamental data structure in JavaScript.
     - Example:
-    ```
+    ```javascript
     let person {
         name: "Alice",
         age: 30,
@@ -228,19 +229,113 @@ let x = 10 + 5; // x will be assigned the value 15
 
     Represents an ordered list of values and uses zero-based indexing.
     - Example:
-    ```
+    ```javascript
     let number = [ 1, 2, 3, 4, 5];
     ```
 3. **Functions:**
 
     Represents  a reusable block of code that perform specific tasks.
     - Example:
-    ```
+    ```javascript
     function greet(name) {
         comsole.log('Hello, '+ name + '!');
     }
     greet('Alice'); // Hello, Alice
     ```
+- **Dynamic Typing**
+
+JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
+```
+let dynamicVar = 10; // dynamicVar is a number
+dynamicVar = 'Hello'; // dynamic Var is now a string
+```
+- **Typeof Operator**
+
+The typeof operator is used to determine the data type of a variable or an expression.
+- Eaample:
+```javascript
+let name = 'Maung Maung';
+console.log(typeof name); // Output: string
+```
+**Note**
+
+In JavaScript, a data type is a classification that specifies which type of value a variable can hold. JavaScript is a loosely typed or dynamically typed language, which means that you don't have to explicitly declare the data type of a variable when you create it. The interpreter determines the data type based on the value assigned to the variable.
+
+JavaScript has two main categories of data types: primitive types and object types.
+
+### Primitive Data Types:
+
+1. **Undefined:**
+   - Represents an uninitialized or undeclared variable.
+   - Example: `let x;`
+
+2. **Null:**
+   - Represents the intentional absence of any object value.
+   - Example: `let y = null;`
+
+3. **Boolean:**
+   - Represents a logical entity and can have two values: `true` or `false`.
+   - Example: `let isTrue = true;`
+
+4. **Number:**
+   - Represents numeric values, including integers and floating-point numbers.
+   - Example: `let num = 42;`
+
+5. **String:**
+   - Represents textual data and is enclosed in single or double quotes.
+   - Example: `let text = 'Hello, World!';`
+
+6. **Symbol:**
+   - Introduced in ECMAScript 6 (ES6), symbols are unique and immutable primitive values.
+   - Example: `let sym = Symbol('uniqueSymbol');`
+
+### Object Types:
+
+1. **Object:**
+   - Represents a collection of key-value pairs (properties) and is a fundamental data structure in JavaScript.
+   - Example: 
+     ```javascript
+     let person = {
+       name: 'John',
+       age: 30,
+       isStudent: false
+     };
+     ```
+
+2. **Array:**
+   - Represents an ordered list of values and uses zero-based indexing.
+   - Example: `let numbers = [1, 2, 3, 4, 5];`
+
+3. **Function:**
+   - Represents a reusable block of code that can be invoked with a specific set of parameters.
+   - Example:
+     ```javascript
+     function add(x, y) {
+       return x + y;
+     }
+     ```
+
+### Dynamic Typing:
+
+JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
+
+```javascript
+let dynamicVar = 10; // dynamicVar is a number
+dynamicVar = 'Hello'; // dynamicVar is now a string
+```
+
+### Typeof Operator:
+
+The `typeof` operator is used to determine the data type of a variable or an expression.
+
+```javascript
+let example = 'Hello';
+console.log(typeof example); // Output: "string"
+```
+**Note**
+
+Understanding data types is crucial for effective programming in JavaScript, as it helps in writing robust and bug-free code. Different operations and behaviors are associated with different data types, so knowing the type of your variables is important for proper program execution.
+
 ### Key Points:
 
 - Understanding data types is essential for writing accurate and predictable JavaScript code.
