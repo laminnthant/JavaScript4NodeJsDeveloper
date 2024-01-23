@@ -223,7 +223,7 @@ let x = 10 + 5; // x will be assigned the value 15
         name: "Alice",
         age: 30,
         isStudent: false
-    }
+    };
     ```
 2. **Arrays:**
 
@@ -245,7 +245,7 @@ let x = 10 + 5; // x will be assigned the value 15
 - **Dynamic Typing**
 
 JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
-```
+```javascript
 let dynamicVar = 10; // dynamicVar is a number
 dynamicVar = 'Hello'; // dynamic Var is now a string
 ```
@@ -256,81 +256,6 @@ The typeof operator is used to determine the data type of a variable or an expre
 ```javascript
 let name = 'Maung Maung';
 console.log(typeof name); // Output: string
-```
-**Note**
-
-In JavaScript, a data type is a classification that specifies which type of value a variable can hold. JavaScript is a loosely typed or dynamically typed language, which means that you don't have to explicitly declare the data type of a variable when you create it. The interpreter determines the data type based on the value assigned to the variable.
-
-JavaScript has two main categories of data types: primitive types and object types.
-
-### Primitive Data Types:
-
-1. **Undefined:**
-   - Represents an uninitialized or undeclared variable.
-   - Example: `let x;`
-
-2. **Null:**
-   - Represents the intentional absence of any object value.
-   - Example: `let y = null;`
-
-3. **Boolean:**
-   - Represents a logical entity and can have two values: `true` or `false`.
-   - Example: `let isTrue = true;`
-
-4. **Number:**
-   - Represents numeric values, including integers and floating-point numbers.
-   - Example: `let num = 42;`
-
-5. **String:**
-   - Represents textual data and is enclosed in single or double quotes.
-   - Example: `let text = 'Hello, World!';`
-
-6. **Symbol:**
-   - Introduced in ECMAScript 6 (ES6), symbols are unique and immutable primitive values.
-   - Example: `let sym = Symbol('uniqueSymbol');`
-
-### Object Types:
-
-1. **Object:**
-   - Represents a collection of key-value pairs (properties) and is a fundamental data structure in JavaScript.
-   - Example: 
-     ```javascript
-     let person = {
-       name: 'John',
-       age: 30,
-       isStudent: false
-     };
-     ```
-
-2. **Array:**
-   - Represents an ordered list of values and uses zero-based indexing.
-   - Example: `let numbers = [1, 2, 3, 4, 5];`
-
-3. **Function:**
-   - Represents a reusable block of code that can be invoked with a specific set of parameters.
-   - Example:
-     ```javascript
-     function add(x, y) {
-       return x + y;
-     }
-     ```
-
-### Dynamic Typing:
-
-JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
-
-```javascript
-let dynamicVar = 10; // dynamicVar is a number
-dynamicVar = 'Hello'; // dynamicVar is now a string
-```
-
-### Typeof Operator:
-
-The `typeof` operator is used to determine the data type of a variable or an expression.
-
-```javascript
-let example = 'Hello';
-console.log(typeof example); // Output: "string"
 ```
 **Note**
 
