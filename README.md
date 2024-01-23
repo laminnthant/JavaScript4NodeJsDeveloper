@@ -158,7 +158,7 @@ let x = 10 + 5; // x will be assigned the value 15
  
 #### 1. Primitive Data Types
 
-    Simple , indivisible values stored directly in memory.
+Simple , indivisible values stored directly in memory.
 
 1. **Number:**
 
@@ -212,7 +212,7 @@ let x = 10 + 5; // x will be assigned the value 15
 
 #### 2. Non-Primitive Data Types(Reference Types,Object Types)
 
-    Store references to memory locations where the actual values are stored.
+Store references to memory locations where the actual values are stored.
 
 1. **Objects:**
 
@@ -242,22 +242,22 @@ let x = 10 + 5; // x will be assigned the value 15
     }
     greet('Alice'); // Hello, Alice
     ```
-- **Dynamic Typing**
+##### Dynamic Typing
 
 JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
 ```javascript
 let dynamicVar = 10; // dynamicVar is a number
 dynamicVar = 'Hello'; // dynamic Var is now a string
 ```
-- **Typeof Operator**
+##### Typeof Operator
 
 The typeof operator is used to determine the data type of a variable or an expression.
-- Eaample:
+- Example:
 ```javascript
 let name = 'Maung Maung';
 console.log(typeof name); // Output: string
 ```
-**Note**
+##### Note
 
 Understanding data types is crucial for effective programming in JavaScript, as it helps in writing robust and bug-free code. Different operations and behaviors are associated with different data types, so knowing the type of your variables is important for proper program execution.
 
