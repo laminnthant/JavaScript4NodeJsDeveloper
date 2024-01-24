@@ -75,6 +75,7 @@ greet({ name: "Alice", age: 25 }); // Object literal
 ### Key points
 - Adhere to these lexical rules to write valid JavaScript code.
 - Understanding lexical structure is essential for interpreting and writing JavaScript effectively.
+_______________________________________________________________________________________________________________
 
 ## 2. Expressions
 ### Introduction
@@ -149,6 +150,7 @@ let x = 10 + 5; // x will be assigned the value 15
 - Expressions are evaluated to produce values, while statements perform actions.
 - Expressions can be nested within other expressions, forming complex calculations and logic.
 - Understanding expressions is essential for writing meaningful and effective JavaScript code.
+_______________________________________________________________________________________________________________
 
 ## 3. Data Types
 
@@ -242,22 +244,21 @@ Store references to memory locations where the actual values are stored.
     }
     greet('Alice'); // Hello, Alice
     ```
-##### Dynamic Typing
+##### *Dynamic Typing*
 
 JavaScript is dynamically typed, meaning you can change the type of a variable at runtime. For example, you can start with a variable holding a number and later assign a string to it.
 ```javascript
 let dynamicVar = 10; // dynamicVar is a number
 dynamicVar = 'Hello'; // dynamic Var is now a string
 ```
-##### Typeof Operator
+##### *Typeof Operator*
 
-The typeof operator is used to determine the data type of a variable or an expression.
-- Example:
+The `typeof` operator is used to determine the data type of a variable or an expression.
 ```javascript
 let name = 'Maung Maung';
 console.log(typeof name); // Output: string
 ```
-##### Note
+##### *Note*
 
 Understanding data types is crucial for effective programming in JavaScript, as it helps in writing robust and bug-free code. Different operations and behaviors are associated with different data types, so knowing the type of your variables is important for proper program execution.
 
@@ -266,6 +267,40 @@ Understanding data types is crucial for effective programming in JavaScript, as 
 - Understanding data types is essential for writing accurate and predictable JavaScript code.
 - Choose appropriate data types based on the nature of the data you're working with.
 - JavaScript's dynamic typing means you don't need to explicitly declare data types, but it's often good    practice for clarity and error prevention.
+_______________________________________________________________________________________________________________
+
+## 4. Classes
+### Introduction
+
+**Classes** are blueprints for creating objects with similar properties and behaviors.
+They provide a structured way to organize and encapsulate data and functionality.The introduction of classes in ECMAScript 6 (ES6) simplified the process of creating and working with objects.
+
+### Key Concepts:
+
+1. **Class Declaration:**
+
+To define a class , use the `class` keyword followed by the class name.
+- Example:
+```javascript
+class Animal { //class decelaration
+    // class body
+}
+```
+2. **Constructor**
+
+A special method named `constructor` that initializes objects when they are created.
+-Example:
+```javascript
+calss Animal { //class decelaration
+    constructor(name,species){ // constructor method
+        this.name = name;
+        this.species = species;
+    }
+}
+```
+3. **Methods**
+
+
 
 1. [Lexical Structure](Lexicalstructure.md)
 2. [Expressions](Expressions.md)
