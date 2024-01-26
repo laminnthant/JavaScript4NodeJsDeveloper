@@ -279,28 +279,93 @@ They provide a structured way to organize and encapsulate data and functionality
 
 1. **Class Declaration:**
 
-To define a class , use the `class` keyword followed by the class name.
-- Example:
-```javascript
-class Animal { //class decelaration
-    // class body
-}
-```
+    To define a class , use the `class` keyword followed by the class name.
+    - Example:
+    ```javascript
+    class Animal { //Class decelaration
+    // Class body
+    }
+    ```
 2. **Constructor**
 
-A special method named `constructor` that initializes objects when they are created.
--Example:
-```javascript
-calss Animal { //class decelaration
-    constructor(name,species){ // constructor method
+    A special method named `constructor` that initializes objects when they are created.
+    - Example:
+    ```javascript
+    calss Animal { //Class decelaration
+    constructor(name,species){ //Constructor
         this.name = name;
         this.species = species;
     }
-}
-```
+    }
+    ```
 3. **Methods**
 
+    Functions defined within a class that operate on object data.
+    - Example:
+    ```javascript
+    class Animal { //Class decelaration
+    constructor(name,species){ //Constructor
+        this.name = name;
+        this.species = species;
+    }
+    displayInfo(){ //Method1 to display information
+        console.log(`${this.name} is a ${this.species}.`);
+    }
+    sleep(){ //Method2 to display how is it lazy
+        console.log(`${this.name} is sleeping.`);
+    }
+    }
+    ```
+4. **Creating Objects(instances)**
 
+    Use the `new` keyword with the class name to create objects (instances) of the class.Each object(instance) has its own set of properties, initialized by the ***constructor***, and can call the ***methods*** defined in the ***class***.
+    - Example:
+    ```javascript
+    //Creating the instance of Animal class
+    let dog = new Animal('GoteKyar','Dog');
+    //Calling methods(displayInfo,sleep) on instances
+    dog.displayInfo(); //Output: GoteKyar is a Dog.
+    dog.sleep();//Output: GoteKyar is sleeping.
+    ```
+5. **Inheritance:**
 
+    Class inheritance is a way to create a new class that is a modified version of an existing class, often referred to as the ***parent*** class using `extends` keyword. The new class, known as the ***child*** class, inherits properties and methods from the parent class, allowing for code reuse and the creation of a hierarchy of classes.
+    - Example:
+    ```javascript
+    //Parent class
+    class Animal { //Class decelaration
+        constructor(name,species){ //Constructor
+        this.name = name;
+        this.species = species;
+    }
+    displayInfo(){ //Method1 to display information
+        console.log(`${this.name} is a ${this.species}.`);
+    }
+    sleep(){ //Method2 to display how is it lazy
+        console.log(`${this.name} is sleeping.`);
+    }
+    }
+    //Child class inheriting form the parent Animal class
+    class Mammal extends Animal{
+        //Additional costructor paramater for child class
+        constructor(name,species,isWarmBlooded){
+        //Call the parent class constructor using super()
+        super(name,species);
+        this.isWarmBlooded = isWarmBlooded;
+        }
+        //Overwriting the displayInfo method from the parent class
+        displayInfo(){
+            console.log(`${this.name} is a ${this.species} and is ${this.isWarmBlooded}.`);
+        }
+    }
+    //Creating instance of classes
+    let cat = new Animal('shweWah','Cat');
+    let tiger = new Mammal('Kitty','Tiger','Warmblooded');
+    //Using the methods of the parent class
+    cat.displayInfo();//Output: ShweWah is a Cat.
+    cat.sleep();//Output: ShweWah is sleeping
+    //Using the method of the child class
+    tiger.displayInfo();//Output: Kitty is a Tiger and is Warmblooded.
+    ```
 1. [Lexical Structure](Lexicalstructure.md)
 2. [Expressions](Expressions.md)
